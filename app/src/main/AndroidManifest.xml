@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.weather">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".Api.MainApplication"
         android:allowBackup="true"
@@ -11,6 +15,9 @@
         android:theme="@style/Theme.Weather"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".HourActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +27,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

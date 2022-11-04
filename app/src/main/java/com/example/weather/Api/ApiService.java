@@ -19,6 +19,7 @@ public class ApiService {
     private static Retrofit mRetrofit;
 
     private ApiService(){
+        //Перехватчик запросов
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 
@@ -42,8 +43,4 @@ public class ApiService {
         return mRetrofit.create(AuthApi.class);
     }
 
-    /*public void getForecast(User user, Callback<User> callback) {
-        Call<User> userCall = service.signAnswer(user);
-        userCall.enqueue(callback);
-    }*/
 }
