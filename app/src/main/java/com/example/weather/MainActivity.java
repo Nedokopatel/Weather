@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences.Editor prefEditor;
 
 
-    String [] cities = {"Moscow","London","Istanbul","Saratov","Vologda"};
+    String [] cities = {"Moscow","London","Istanbul","Saratov","Vologda","Abuja","Beijing","Sydney","Brasilia","Mexico City"};
     public static List<Hour> hours = new ArrayList<>();
 
     static Location location;
